@@ -1,0 +1,424 @@
+
+<HTML>
+<HEADER>
+	<TITLE> ROPHONE-MGH </TITLE>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+
+</HEADER>
+<style>
+		    body {
+                font-family: Helvetica, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica; 
+                font-size: 14px;
+                margin:0px;
+                -webkit-user-select: none;
+		    }
+		    a { color:#0091FF; font-weight: bold; }
+		    div { border: 0px solid red }
+		    div.name { width:200px; float:left; color:#000 }
+		    div.number { margin-left:auto; margin-right:0px; color:#0091FF; width:120px; text-align:right; font-weight:bold;}
+		    div.text { margin-left:auto; margin-right:0px; color:#000; width:120px; text-align:right; }
+		    a { text-decoration:none; font-size: 14px; }
+		    div.row { display:block; padding:4px; border-bottom: 1px solid #ddd; }
+		    div.subrow { display:block; padding:4px; border-bottom: 1px solid #ddd; margin-left:25px; font-size: 12px;}
+		    div.header { background-color: #eee; font-weight: bolder; padding-left: 8px;border-bottom: 1px solid #ddd;}
+		    div.footer a { font-size: 12px; }
+		    div.footer { background-color: #eee; text-align: center; padding:8px; font-size: 17px; }
+		    div.footer a { font-size: 12px; }
+		    div.row:active { background-color:#ddd; }
+		    img.icon { width:14px; }
+		    span.jones { color:#4e387e; font-weight: bold; }
+		    a.comment { color:#fff; font-size: smaller; background-color:#bbb; border-radius:14px; padding:0 8px 2px 8px;}
+		    span.floor { display:inline-block; width:22px; height:22px; color:#fff; background-color:#bbb; border-radius:20px; text-align: center; }
+		    input{padding:0px;margin:0px;border:0px;display:inline-block;webkit-appearance:none;font-size:14px;width:100px;border-radius:0px;color:#0091FF; text-align:right; font-weight:bold;background-color:transparent;}
+		    input:invalid{background-color:#fdd;}
+		    a.right {    position: absolute;     right: 0; }
+</style>
+<script>
+        window.addEventListener('load', function() {
+            FastClick.attach(document.body);
+        }, false);
+        
+        function tryDialExtension(event) {
+            var ext = document.getElementById('ext').value.replace(/\D/g, '');
+            if(ext.length == 5) location.href='tel:6177325500,2' + ext + '#';
+            else if(ext == '0') location.href='tel:6177325500,0#';
+        }
+        
+
+function tryDialExtensionMGH(event) {
+            var extt = document.getElementById('extt').value.replace(/\D/g, '');
+            if(extt.length == 5) location.href='tel:+161764' + extt;
+            else if(extt == '0') location.href='tel:6177262000';
+        }
+
+function tryDialExtensionMGHH(event) {
+            var exttt = document.getElementById('exttt').value.replace(/\D/g, '');
+            if(exttt.length == 5) location.href='tel:+161772' + exttt;
+            else if(exttt == '0') location.href='tel:6177262000';
+        }
+
+function tryDialExtensionMGHHH(event) {
+            var extttt = document.getElementById('extttt').value.replace(/\D/g, '');
+            if(extttt.length == 5) location.href='tel:+161772' + extttt;
+            else if(extttt == '0') location.href='tel:6177262000';
+        }
+
+function tryDialExtensionMGHHHH(event) {
+            var exttttt = document.getElementById('exttttt').value.replace(/\D/g, '');
+            if(exttttt.length == 5) location.href='tel:+185723' + exttttt;
+            else if(exttttt == '0') location.href='tel:6177262000';
+        }
+        
+
+   		</script>
+<BODY>
+<div class="header">MGH</div>
+
+<div class="row" onclick="location.href='tel:6177262000';">
+		<div class="name"><img src="MGH_Tight.jpg" class="icon"> Main Line</div>
+    	<div class="number">62000</div>
+	</div>
+
+<div class="row" >
+		<div class="name"><img src="phone.jpg" class="icon"> Dial Extensions</div>
+    	<div class="text"> -</div>
+	</div>
+
+
+<div class="subrow">
+		<div class="name" onclick="location.href='tel:6177262000';"> Ext starting with 3 &ensp;(617-643-____)</div>
+    	<div class="number"><input pattern="\d*" maxlength="5" id="extt" placeholder="Ext #" onkeyup="tryDialExtensionMGH(event);" autocomplete="off" /></div>
+	</div>
+
+<div class="subrow">
+		<div class="name" onclick="location.href='tel:6177262000';"> Ext starting with 4 &ensp;(617-724-____)</div>
+    	<div class="number"><input pattern="\d*" maxlength="5" id="exttt" placeholder="Ext #" onkeyup="tryDialExtensionMGHH(event);" autocomplete="off" /></div>
+	</div>
+
+<div class="subrow">
+		<div class="name" onclick="location.href='tel:6177262000';"> Ext starting with 6 &ensp;(617-726-____)</div>
+    	<div class="number"><input pattern="\d*" maxlength="5" id="extttt" placeholder="Ext #" onkeyup="tryDialExtensionMGHHH(event);" autocomplete="off" /></div>
+	</div>
+
+<div class="subrow">
+		<div class="name" onclick="location.href='tel:6177262000';"> Ext starting with 8 &ensp;(857-238-____)</div>
+    	<div class="number"><input pattern="\d*" maxlength="5" id="exttttt" placeholder="Ext #" onkeyup="tryDialExtensionMGHHHH(event);" autocomplete="off" /></div>
+	</div>
+
+
+<div class="row" onclick="location.href='tel:6177244170';">
+		<div class="name"><img src="Cross_Tight.png" class="icon"> Emergency Department</div>
+    	<div class="number">44170</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177263613';">
+		<div class="name"><img src="bacteria.png" class="icon"> Microbiology</div>
+    	<div class="number">63613</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177262967';">
+		<div class="name"><img src="path.png" class="icon"> Pathology</div>
+    	<div class="number">62967</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177267919';">
+		<div class="name"><img src="microdropoff.png" class="icon"> Virology</div>
+    	<div class="number">67919</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6176433344';">
+		<div class="name"><img src="interpreter.png" class="icon"> Phone Interpreter</div>
+    	<div class="number">33344</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177266966';">
+		<div class="name"><img src="interpreter.png" class="icon"> IPOP Translation Service</div>
+    	<div class="number">66966</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177265085';">
+		<div class="name"><img src="ithelp.png" class="icon"> IT Help Desk</div>
+    	<div class="number">65085</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177262914';">
+		<div class="name"><img src="outptclinic.jpg" class="icon"> Outpatient Clinic</div>
+    	<div class="number">62914</div>
+	</div>
+
+<div class="row" onclick="location.href='https://ppd.partners.org/scripts/phsweb.mwl?APP=PDPERS&ACTION=PAGE&ID=33417'">
+		<div class="name"><img src="pager2.png" class="icon"> After Hours Path Pager </div>
+    	<div class="number">p23305</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="microdropoff.png" class="icon"> Micro Drop Off </div>
+    	<div class="text">Gray 5</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="pathdropoff.jpg" class="icon"> Path Drop Off </div>
+    	<div class="text">Ellison 3</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="calendar.jpg" class="icon"> Follow Up Appointments </div>
+    	<div class="text">Epic Referral</div>
+	</div>
+
+
+
+<div class="header">BWH</div>
+
+
+<div class="row" onclick="location.href='tel:6177325500';">
+		<div class="name"><img src="BWH_Tight.png" class="icon"> Main Line</div>
+    	<div class="number">25500</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177326660';">
+		<div class="name"><img src="pagingoperator.jpg" class="icon"> Paging Operator</div>
+    	<div class="number">26660</div>
+	</div>
+
+<div class="row">
+		<div class="name" onclick="location.href='tel:6177325500';"><img src="phone.jpg" class="icon"> Dial Extension (617-73...)</div>
+    	<div class="number"><input pattern="\d*" maxlength="5" id="ext" placeholder="Ext #" onkeyup="tryDialExtension(event);" autocomplete="off" /></div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177325636,2';">
+		<div class="name"><img src="Cross_Tight.png" class="icon"> Emergency Department</div>
+    	<div class="number">25636</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177327383';">
+		<div class="name"><img src="bacteria.png" class="icon"> Microbiology</div>
+    	<div class="number">27383</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177327510';">
+		<div class="name"><img src="path.png" class="icon"> Pathology</div>
+    	<div class="number">27510</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177326639';">
+		<div class="name"><img src="interpreter.png" class="icon"> Phone Interpreter</div>
+    	<div class="number">26639</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177325927';">
+		<div class="name"><img src="ithelp.png" class="icon"> IT Help Desk</div>
+    	<div class="number">25927</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177324918';">
+		<div class="name"><img src="outptclinic.jpg" class="icon"> Outpatient Clinic</div>
+    	<div class="number">24918</div>
+	</div>
+
+<div class="row" onclick="location.href='https://ppd.partners.org/scripts/phsweb.mwl?APP=PDPERS&ACTION=PAGE&ID=32786'">
+		<div class="name"><img src="pager2.png" class="icon"> After Hours Path Pager </div>
+    	<div class="number">p11601</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="microdropoff.png" class="icon"> Micro Drop Off </div>
+    	<div class="text">Lab Control 2nd Fl</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="pathdropoff.jpg" class="icon"> Path Drop Off </div>
+    	<div class="text">Amory 2</div>
+	</div>
+
+<div class="row" onclick="location.href='mailto:bwhdermappointments@partners.org ?subject=BWH Follow Up Appointment&body=Hello, %0D%0AI am writing to schedule a follow up appointment for patient: ***, MRN ***, who was seen in the inpatient setting on ***. We are hoping to schedule follow up within *** days with Dr. ***. %0D%0AThanks in advance for your help.%0D%0A'">
+		<div class="name"><img src="calendar.jpg" class="icon"> Follow Up Appointments </div>
+    	<div class="number">Email</div>
+</div>
+
+
+
+
+<div class="header">BIDMC</div>
+
+<div class="row" onclick="location.href='tel:6176677000';">
+		<div class="name"><img src="bidmclogo.jpg" class="icon"> Main Line</div>
+    	<div class="number">77000</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177542400';">
+		<div class="name"><img src="Cross_Tight.png" class="icon"> Emergency Department</div>
+    	<div class="number">42400</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6176672306';">
+		<div class="name"><img src="bacteria.png" class="icon"> Microbiology</div>
+    	<div class="number">72306</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6176674344';">
+		<div class="name"><img src="path.png" class="icon"> Pathology</div>
+    	<div class="number">74344</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6176673018';">
+		<div class="name"><img src="microdropoff.png" class="icon"> Virology</div>
+    	<div class="number">73018</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6176674011';">
+		<div class="name"><img src="interpreter.png" class="icon"> Phone Interpreter</div>
+    	<div class="number">74011</div>
+	</div>
+
+
+<div class="row" onclick="location.href='tel:6179759711';">
+		<div class="name"><img src="patient.jpg" class="icon"> Patient's Bed Phone</div>
+    	<div class="number">59711</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6177548080';">
+		<div class="name"><img src="ithelp.png" class="icon"> IT Help Desk</div>
+    	<div class="number">48080</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6176673753';">
+		<div class="name"><img src="outptclinic.jpg" class="icon"> Outpatient Clinic</div>
+    	<div class="number">73753</div>
+	</div>
+
+<div class="row" onclick="location.href='https://pagers.bidmc.org/home'">
+		<div class="name"><img src="pager2.png" class="icon"> After Hours Path Pager </div>
+    	<div class="number">p32094</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="microdropoff.png" class="icon"> Micro Drop Off </div>
+    	<div class="text">Rabb 3</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="pathdropoff.jpg" class="icon"> Path Drop Off </div>
+    	<div class="text">Sherman 1 (PM: Rabb 3)</div>
+	</div>
+
+<div class="row" onclick="location.href='mailto:sizhar@bidmc.harvard.edu ?subject=BIDMC Follow Up Appointment&body=Hello, %0D%0AI am writing to schedule a follow up appointment for patient: ***, MRN ***, who was seen in the inpatient setting on ***. We are hoping to schedule follow up within *** days with Dr. ***. %0D%0AThanks in advance for your help.%0D%0A'">
+		<div class="name"><img src="calendar.jpg" class="icon"> Follow Up Appointments </div>
+    	<div class="number">Email</div>
+</div>
+
+
+
+<div class="header">Children's</div>
+
+<div class="row" onclick="location.href='tel:6173556000';">
+		<div class="name"><img src="bchlogo.png" class="icon"> Main Line</div>
+    	<div class="number">56000</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6173556369';">
+		<div class="name"><img src="pagingoperator.jpg" class="icon"> Paging Operator</div>
+    	<div class="number">56369</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6173556611';">
+		<div class="name"><img src="Cross_Tight.png" class="icon"> Emergency Department</div>
+    	<div class="number">56611</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6173557485';">
+		<div class="name"><img src="bacteria.png" class="icon"> Microbiology</div>
+    	<div class="number">57485</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6173557431';">
+		<div class="name"><img src="path.png" class="icon"> Pathology</div>
+    	<div class="number">57431</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6173557624';">
+		<div class="name"><img src="microdropoff.png" class="icon"> Virology</div>
+    	<div class="number">57624</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6173557198';">
+		<div class="name"><img src="interpreter.png" class="icon"> Phone Interpreter</div>
+    	<div class="number">57198</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6179194357';">
+		<div class="name"><img src="ithelp.png" class="icon"> IT Help Desk</div>
+    	<div class="number">94357</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6173556117';">
+		<div class="name"><img src="outptclinic.jpg" class="icon"> Outpatient Clinic</div>
+    	<div class="number">56117</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="microdropoff.png" class="icon"> Micro Drop Off </div>
+    	<div class="text">Farley 8</div>
+	</div>
+
+<div class="row">
+		<div class="name"><img src="pathdropoff.jpg" class="icon"> Path Drop Off </div>
+    	<div class="text">Bader 1 (PM: Farley 7)</div>
+	</div>
+
+<div class="row" onclick="location.href='mailto:amanda.schultz@childrens.harvard.edu, madison.allred@childrens.harvard.edu ?subject=BCH Follow Up Appointment&body=Hello, %0D%0AI am writing to schedule a follow up appointment for patient: ***, MRN ***, who was seen in the inpatient setting on ***. We are hoping to schedule follow up within *** days with Dr. ***. %0D%0AThanks in advance for your help.%0D%0A'">
+		<div class="name"><img src="calendar.jpg" class="icon"> Follow Up Appointments </div>
+    	<div class="number">Email</div>
+</div>
+
+
+
+<div class="header">VAMC</div>
+
+<div class="row" onclick="location.href='tel:6173237700';">
+		<div class="name"><img src="valogo.jpeg" class="icon"> West Rox Main Line</div>
+    	<div class="number">37700</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6172329500';">
+		<div class="name"><img src="valogo.jpeg" class="icon"> JP Main Line</div>
+    	<div class="number">29500</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:8556734357';">
+		<div class="name"><img src="ithelp.png" class="icon"> IT Help Desk</div>
+    	<div class="number">34357</div>
+	</div>
+
+
+
+<div class="header">MEEI</div>
+
+<div class="row" onclick="location.href='tel:6175237900,,0';">
+		<div class="name"><img src="meei.jpeg" class="icon"> Paging Operator</div>
+    	<div class="number">37900</div>
+	</div>
+
+<div class="row" onclick="location.href='tel:6175237900,,3240';">
+		<div class="name"><img src="Cross_Tight.png" class="icon"> Emergency Department</div>
+    	<div class="number">33240</div>
+	</div>
+
+
+
+
+<div class="footer">
+	
+	<a href="mailto:Lauren&lt;laurennko@gmail.com&gt;?subject=BWH Derm%20Phone%20Idea">💌 Message Lauren With Suggestions </a>
+	&nbsp;
+
+</BODY>
+
+
+</HTML>
